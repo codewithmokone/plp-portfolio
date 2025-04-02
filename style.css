@@ -42,6 +42,14 @@ nav a{
     margin-right: 20px;
 }
 
+.active{
+    color: #FE6721;
+}
+
+nav a:hover{
+    color: #FE6721;
+}
+
 .section{
     width: 90%;
     height: fit-content;
