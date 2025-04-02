@@ -3,33 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio - Simon Lephoto</title>
 </head>
 <body>
     <header>
-        <span id="logo">Simon Lephoto</span>
+        <span id="logo"><span>S</span>imon Lephoto</span>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#herosection">Home</a>
+            <a href="#aboutsection">About</a>
+            <a href="#projectsection">Projects</a>
+            <a href="#contactsection">Contact</a>
         </nav>
     </header>
     <main>
         <section id="herosection" class="section">
             <div>
-                <h1>Hello, I'm Simon Lephoto</h1>
-                <h2>a Front-end Developer</h2>
+                <h1>Hello, I'm <span>Simon Lephoto</span></h1>
+                <h2>a <span>Front-end</span> Developer</h2>
+                <button>RESUME</button>
             </div>
             <div>
-                <img src="#" width="200px" height="200px" alt="">
+                <img src="#" alt="">
             </div>
         </section>
         <section id="aboutsection" class="section"></section>
         <section id="projectsection" class="section"></section>
-        <section id="contactsection" class="section"></section>
+        <section id="contactsection" class="section">
+            <div id="contactinfo">
+                <h3>Contact info:</h3>
+                <ul>
+                    <li>Address: JHB Central</li>
+                    <li>Phone: +27 71 313 2387</li>
+                    <li>Email: simonlephotojr@gmail.com</li>
+                    <li></li>
+                </ul>
+            </div>
+            <div id="contactform">
+                <form action="#">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+                    <label for="subject">Subject</label><br>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+                  </form>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div></div>
+        <div id="copyright">
+            <p>© Copyright 2025. Portfolio</p>
+        </div>
+    </footer>
 </body>
 </html>

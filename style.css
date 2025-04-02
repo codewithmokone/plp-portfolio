@@ -1,11 +1,20 @@
 body {
+    font-family: "Roboto", sans-serif;
     margin: 0 auto;
 }
+
+/* {
+ color: #FE6721; orange
+ color: #E8E7E1; grey
+ color: #000000; black
+} */
+
+/* header section */
 
 header {
     width: 90%;
     height: 60px;
-    background-color: gray;
+    background-color: #F3F2F0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -14,13 +23,23 @@ header {
 }
 
 #logo {
-    font-size: 26px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+
+}
+
+#logo span {
+    color: #FE6721;
 }
 
 nav a{
+    color: #000000;
     font-size: 16px;
+    font-weight: bold;
     padding: 10px;
     text-decoration: none;
+    margin-right: 20px;
 }
 
 .section{
@@ -29,8 +48,9 @@ nav a{
     margin: auto;
 }
 
+/* hero section */
 #herosection{
-    background-color: blue;
+    background-color: #F3F2F0;
     height: 400px;
     display: flex;
     flex-direction: row;
@@ -38,8 +58,79 @@ nav a{
     align-items: center;
 }
 
+#herosection span{
+    color: #FE6721;
+}
+
+#herosection button {
+    border: 1px solid;
+    border-radius: 6px;
+    background-color: #FE6721;
+    padding: 6px;
+}
+
 img {
+    width:300px; 
+    height:300px;
     background-color: gray;
     border-radius: 50%;
+}
+
+/* about section */
+#aboutsection {
+    height: 400px;
+}
+
+/* project section */
+#projectsection {
+    height: 400px;
+    background-color: #F3F2F0;
+}
+
+/* contact section */
+#contactsection {
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contactinfo {
+    width: 50%;
+    background-color: blue;
+}
+
+#contactinfo ul {
+    list-style: none;
+}
+
+#contactform {
+    width: 50%;
+    background-color: gray;
+}
+
+input{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    /* resize: vertical; */
+}
+
+/* footer section */
+footer {
+    color: #ffffff;
+    height: 150px;
+    background-color: #000000;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
