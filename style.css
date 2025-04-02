@@ -12,21 +12,25 @@ body {
 /* header section */
 
 header {
-    width: 90%;
+    width: 100%;
     height: 60px;
-    background-color: #F3F2F0;
+    /* background-color: #F3F2F0; */
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin: auto;
+    transition: 0.4s;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
 }
 
 #logo {
     font-size: 30px;
     font-weight: bold;
-    margin-left: 20px;
-
+    margin-left: 80px;
 }
 
 #logo span {
@@ -37,9 +41,9 @@ nav a{
     color: #000000;
     font-size: 16px;
     font-weight: bold;
-    padding: 10px;
+    padding: 4px;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 80px;
 }
 
 .active{
@@ -59,11 +63,19 @@ nav a:hover{
 /* hero section */
 #herosection{
     background-color: #F3F2F0;
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+#herosection p {
+    font-size: 20px;
 }
 
 #herosection span{
@@ -86,7 +98,48 @@ img {
 
 /* about section */
 #aboutsection {
-    height: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutme p {
+    width: 70%;
+    text-align: center;
+}
+
+#education {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#eduinfo {
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cards {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+
 }
 
 /* project section */
@@ -97,7 +150,7 @@ img {
 
 /* contact section */
 #contactsection {
-    height: 450px;
+    height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -115,11 +168,17 @@ img {
 
 #contactform {
     width: 50%;
-    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 80%;
 }
 
 input{
-    width: 80%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
