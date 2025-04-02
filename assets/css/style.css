@@ -15,6 +15,7 @@ header {
     width: 100%;
     height: 60px;
     /* background-color: #F3F2F0; */
+    backdrop-filter: blur(10px);
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -23,8 +24,10 @@ header {
     margin: auto;
     transition: 0.4s;
     top: 0;
+    gap: 2rem;
     overflow: hidden;
     z-index: 1;
+
 }
 
 #logo {
@@ -62,12 +65,19 @@ nav a:hover{
 
 /* hero section */
 #herosection{
+    background-image: url("../images/triangle-asymmetrical-divider-inverse.svg");
+    background-repeat: no-repeat, repeat;
+    background-position-y:bottom;
     background-color: #F3F2F0;
     height: 600px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+#herosection div {
+    /* margin-top: 60px; */
 }
 
 h1 {
@@ -98,7 +108,10 @@ img {
 
 /* about section */
 #aboutsection {
-    height: 600px;
+    /* background-image: url("../images/triangle-asymmetrical-divider-inverse.svg");
+    background-repeat: no-repeat;
+    background-position-y:top; */
+    height: min-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,10 +119,19 @@ img {
 }
 
 #aboutme {
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#aboutheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
 }
 
 #aboutme p {
@@ -117,8 +139,25 @@ img {
     text-align: center;
 }
 
+#skills {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skillimage {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 0;
+}
+
 #education {
     width: 100%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,39 +166,77 @@ img {
 
 #eduinfo {
     width: 100%;
-    background-color: red;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 30px;
 }
 
 .cards {
-    width: 200px;
+    width: 300px;
     height: 200px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     border: 1px solid green;
+}
 
+.cards ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
 }
 
 /* project section */
 #projectsection {
     height: 400px;
+    background-image: url("../images/bubble-side-divider.svg");
+    background-repeat: no-repeat;
+    background-position-y:bottom;
     background-color: #F3F2F0;
+}
+
+#projectsheader {
+    display: flex;
+    justify-content: center;
+
+}
+
+#projectslist {
+
 }
 
 /* contact section */
 #contactsection {
-    height: 500px;
+    width: 100%;
+    background-image: url("../images/Curve\ Line.svg");
+    background-repeat: no-repeat;
+    background-position-y:bottom;
+    height: 650px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+#contactsection h3 {
+    margin-top: 10px;
+}
+
+#contact-main {
+    width: 90%;
+    display: flex;
+    margin-top: 30px;
 }
 
 #contactinfo {
     width: 50%;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blue; */
 }
 
 #contactinfo ul {
@@ -184,14 +261,21 @@ input{
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 6px;
+    margin-bottom: 16px;
     /* resize: vertical; */
+}
+
+textarea {
+    width: 100%;
 }
 
 /* footer section */
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
-    height: 150px;
+    height: 60px;
     background-color: #000000;
 }
 

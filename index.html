@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts external links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <!-- internal css and javascript links -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
     <title>Portfolio - Simon Lephoto</title>
 </head>
 <body>
@@ -21,6 +23,7 @@
         </nav>
     </header>
     <main>
+        <!-- hero section section -->
         <section id="herosection" class="section">
             <div>
                 <p>Hello, I'm</p>
@@ -32,14 +35,24 @@
                 <img src="#" alt="">
             </div>
         </section>
+        <!-- about section section -->
         <section id="aboutsection" class="section">
             <div id="aboutme">
-                <h3>ABOUT ME</h3>
-                <p>Hi, I'm Simon Lephoto, a creative Frontend Developer with a
+                <div id="aboutheader">
+                    <h3>ABOUT ME</h3>
+                    <p>Hi, I'm Simon Lephoto, a creative Frontend Developer with a
                     passion for turning ideas into dynamic and user-friendly web
                     experiences. With a strong foundation in HTML, CSS, and
                     JavaScript, I specialize in building responsive, accessible,
                     and performant websites that prioritize user experience.</p>
+                </div>
+                <div id="skills">
+                    <img class="skillimage" src="assets/images/html5-01-svgrepo-com.svg" alt="">
+                    <img class="skillimage" src="assets/images/css3-02-svgrepo-com.svg" alt="">
+                    <img class="skillimage" src="assets/images/javascript-155-svgrepo-com.svg" alt="">
+                    <img class="skillimage" src="assets/images/reactjs-svgrepo-com.svg" alt="">
+                    <img class="skillimage" src="assets/images/mysql-svgrepo-com.svg" alt="">
+                </div>
             </div>
             <div id="education">
                 <div>
@@ -48,42 +61,66 @@
                 <div id="eduinfo">
                     <div class="cards">
                         <h4>Diploma in IT</h4>
+                        <ul>
+                            <li>A+</li>
+                            <li>N+</li>
+                            <li>Project Management</li>
+                            <li>Web Development</li>
+                        </ul>
                     </div>
                     <div class="cards">
                         <h4>Certificate in React</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javacript</li>
+                            <li>React</li>
+                            <li>Node JS</li>
+                        </ul>
                     </div>
-                    
                 </div>
             </div>
         </section>
-        <section id="projectsection" class="section"></section>
-        <section id="contactsection" class="section">
-            <div id="contactinfo">
-                <h3>Contact info:</h3>
-                <ul>
-                    <li>Address: JHB Central</li>
-                    <li>Phone: +27 71 313 2387</li>
-                    <li>Email: simonlephotojr@gmail.com</li>
-                    <li></li>
-                </ul>
+        <!-- proojects section section -->
+        <section id="projectsection" class="section">
+            <div id="projectsheader">
+                <h3>PROJECTS</h3>
             </div>
-            <div id="contactform">
-                <form action="#">
-                    <label for="fname">First Name</label><br>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
-                    <label for="lname">Last Name</label><br>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
-                    <label for="subject">Subject</label><br>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                    <input type="submit" value="Submit">
-                  </form>
+            <div id="#projectslist">
+                
+            </div>
+        </section>
+        <!-- contact form section -->
+        <section id="contactsection" class="section">
+            <h3>CONTACT ME</h3>
+            <div id="contact-main">
+                <div id="contactinfo">
+                    <h3>Contact info:</h3>
+                    <ul>
+                        <li>Address: JHB Central</li>
+                        <li>Phone: +27 71 313 2387</li>
+                        <li>Email: simonlephotojr@gmail.com</li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="contactform">
+                    <form action="#">
+                        <label for="fname">First Name</label><br>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+                        <label for="subject">Subject</label><br>
+                        <textarea id="subject" name="subject"  placeholder="Write something.." style="height:200px"></textarea>
+                        <input type="submit" value="Submit">
+                      </form>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <div></div>
+        <!-- <div></div> -->
         <div id="copyright">
-            <p>© Copyright 2025. Portfolio</p>
+            <p>&copy; Copyright 2025 - Portfolio. All rights reserved.</p>
         </div>
     </footer>
     
