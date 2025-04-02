@@ -1,0 +1,45 @@
+body {
+    margin: 0 auto;
+}
+
+header {
+    width: 90%;
+    height: 60px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#logo {
+    font-size: 26px;
+}
+
+nav a{
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.section{
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+}
+
+#herosection{
+    background-color: blue;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    background-color: gray;
+    border-radius: 50%;
+}
+
