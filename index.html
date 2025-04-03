@@ -20,12 +20,26 @@
             <a class="navlink" href="#aboutsection">About</a>
             <a class="navlink" href="#projectsection">Projects</a>
             <a class="navlink" href="#contactsection">Contact</a>
+            <a class="navlink" href="#contactsection">Download CV</a>
         </nav>
-        <nav id="mobile-navbar">
-            <a class="navlink active" href="#herosection">Home</a>
-            <a class="navlink" href="#aboutsection">About</a>
-            <a class="navlink" href="#projectsection">Projects</a>
-            <a class="navlink" href="#contactsection">Contact</a>
+        <div class="ham-burger">
+            <img
+              class="ham-burger-icon"
+              src="assets/images/hamburger-menu-svgrepo-com.svg"
+              alt="menu icon"
+            />
+            <img
+              class="close-icon hidden"
+              src="assets/images/close-svgrepo-com.svg"
+              alt="close icon"
+            />
+          </div>
+        <nav class="mobile-navbar hidden">
+            <a class="mobileNavlink active" href="#herosection">Home</a>
+            <a class="mobileNavlink" href="#aboutsection">About</a>
+            <a class="mobileNavlink" href="#projectsection">Projects</a>
+            <a class="mobileNavlink" href="#contactsection">Contact</a>
+            <a class="mobileNavlink" href="#contactsection">Download CV</a>
         </nav>
     </header>
     <main>
@@ -35,7 +49,10 @@
                 <p>Hello, I'm</p>
                 <h1><span>Simon Lephoto</span></h1>
                 <h2>a <span>Front-end</span> Developer</h2>
-                <button>RESUME</button>
+                <div id="resume-btn-container">
+                    <button>RESUME</button>
+                </div>
+                
             </div>
             <div id="hero-image">
                 <img src="#" alt="">
@@ -103,9 +120,9 @@
                 <div id="contactinfo">
                     <h3>Contact info:</h3>
                     <ul>
-                        <li>Address: JHB Central</li>
-                        <li>Phone: +27 71 313 2387</li>
-                        <li>Email: simonlephotojr@gmail.com</li>
+                        <li><img class="contact-icons" src="assets/icons/address-svgrepo-com.svg" alt=""> Address: JHB Central</li>
+                        <li><img class="contact-icons" src="assets/icons/phone-flip-alt-svgrepo-com.svg" alt=""> Phone: +27 71 313 2387</li>
+                        <li><img class="contact-icons" src="assets/icons/email-1-svgrepo-com.svg" alt=""> Email: simonlephotojr@gmail.com</li>
                         <li></li>
                     </ul>
                 </div>
@@ -116,8 +133,8 @@
                         <label for="lname">Last Name</label><br>
                         <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
                         <label for="subject">Subject</label><br>
-                        <textarea id="subject" name="subject"  placeholder="Write something.." style="height:200px"></textarea>
-                        <input type="submit" value="Submit">
+                        <textarea id="subject" name="subject"  placeholder=" Message.." style="height:200px"></textarea>
+                        <input id="submit-btn" type="submit" value="Submit">
                       </form>
                 </div>
             </div>
