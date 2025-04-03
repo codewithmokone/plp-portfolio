@@ -1,13 +1,19 @@
+/* -------------- General Styles -------------- */
+
+/* Apply a global font and center the page */
 body {
     font-family: "Roboto", sans-serif;
     margin: 0 auto;
 }
 
-/* header section */
+/* -------------- Header Section -------------- */
+
+/* Hide the hamburger menu by default (will be shown on mobile) */
 .ham-burger {
     display: none;
 }
 
+/* Fixed header at the top of the page */
 #header {
     width: 100%;
     height: 60px;
@@ -20,30 +26,37 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
 }
 
+/* Style for the website logo */
 #logo {
     width: 50%;
 }
 
+/* Logo text with custom styling */
 #logo-text {
     font-size: 30px;
     font-weight: bold;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
+/* Highlight the "span" inside the logo */
 #logo span {
     color: #FE6721;
 }
 
+/* Navigation Bar */
 nav {
     width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    margin-right: 20px;
 }
 
+/* Style for navigation links */
 nav a{
     color: #000000;
     font-size: 16px;
@@ -53,14 +66,17 @@ nav a{
     /* margin-right: 40px; */
 }
 
+/* Active navigation link */
 .active{
     color: #FE6721;
 }
 
+/* Change link color on hover */
 nav a:hover{
     color: #FE6721;
 }
 
+/* Mobile Navbar - Hidden by default */
 .mobile-navbar{
     width: 100%;
     height: fit-content;
@@ -72,10 +88,12 @@ nav a:hover{
     top: 60px;
 }
 
+/* Hide element */
 .hidden {
     display: none;
 }
 
+/* Page content section */
 .section{
     width: 1440px;
     height: fit-content;
@@ -83,41 +101,53 @@ nav a:hover{
     padding-top: 60px;
 }
 
-/* hero section */
+/* -------------- Hero Section -------------- */
+
 #herosection{
-    background-image: url("../images/triangle-asymmetrical-divider-inverse.svg");
+    /* background-image: url("../images/triangle-asymmetrical-divider-inverse.svg");
     background-repeat: no-repeat;
-    background-position-y:bottom;
+    background-position-y:bottom; */
     background-color: #F3F2F0;
     width: 100%;
-    height: 600px;
+    height: 450px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-#hero-info, #hero-image{
+/* Adjust hero info to prevent overlap with fixed header */
+#hero-info {
     margin-top: -60px;
 }
 
+/* Main headline */
 h1 {
     font-size: 34px;
 }
 
+/* Hero section paragraph */
 #herosection p {
     font-size: 20px;
 }
 
+/* Hero section button styling */
 #herosection span{
     color: #FE6721;
 }
 
+/* Button text styling */
 #herosection button {
-    border: 1px solid;
+    border: none;
     border-radius: 6px;
     background-color: #FE6721;
-    padding: 6px;
+    padding: 10px 16px;
+    cursor: pointer; /* Makes it clear it's clickable */
+    transition: background-color 0.3s ease;
+}
+
+#herosection button:hover {
+    background-color: #ff8547; /* Slight hover effect */
 }
 
 #herosection button a {
@@ -133,7 +163,8 @@ h1 {
     border-radius: 50%;
 }
 
-/* about section */
+/* -------------- About Section -------------- */
+
 #aboutsection {
     width: 100%;
     height: 900px;
@@ -141,6 +172,9 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-image: url("../images/triangle-asymmetrical-divider-inverse.svg");
+    background-repeat: no-repeat;
+    background-position-y:top;
 }
 
 #aboutme {
@@ -199,9 +233,9 @@ h1 {
     margin-top: 30px;
 }
 
-.cards {
+.cards, .project-card {
     width: 300px;
-    height: 240px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,7 +265,7 @@ h1 {
     margin: 4px;
 }
 
-/* project section */
+/* -------------- Project Section -------------- */
 #projectsection {
     width: 100%;
     height: 800px;
@@ -263,16 +297,6 @@ h1 {
     align-items: center;
 }
 
-.project-card {
-    width: 300px;
-    height: 280px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -284,7 +308,8 @@ h1 {
     text-decoration: none;
 }
 
-/* contact section */
+/* -------------- Contact Section -------------- */
+
 #contactsection {
     width: 100%;
     background-image: url("../images/Curve\ Line.svg");
@@ -338,13 +363,17 @@ h1 {
 }
 
 form {
-    width: 80%;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
 }
 
 #submit-btn {
     background-color: #FE6721;
 }
 
+/* Input fields */
 input{
     width: 100%;
     padding: 10px;
@@ -355,13 +384,15 @@ input{
     margin-bottom: 16px;
 }
 
+/* Text area */
 textarea {
     width: 98%;
     padding: 4px;
     margin-top: 6px;
 }
 
-/* footer section */
+/* -------------- Footer -------------- */
+
 footer {
     display: flex;
     justify-content: center;
@@ -385,26 +416,27 @@ footer {
     margin-top: -10px;
 }
 
-/* If the screen size is 600px wide or less, hide the element */
+/* -------------- Responsive Styles -------------- */
+
+/* If the screen size is 786px wide or less, hide the element */
 @media screen and (max-width: 786px) {
-    /* header section */
+    /* -------------- Header Section -------------- */
+
+    /* Adjust header for smaller screens */
     #header {
         width: 100%;
         display: flex;
         align-items: center;
     }
-
-    #logo {
-        width: 50%;
-        display: flex;
-    }
     
+    /* Reduce logo text size */
     #logo-text {
         font-size: 16px;
         margin-top: 10px;
         margin-left: 20px;
     }
 
+    /* Hide desktop navbar */
     #navbar {
         display: none;
     }
@@ -437,7 +469,8 @@ footer {
         margin: auto;
     }
 
-    /* hero section */
+    /* -------------- Hero Section -------------- */
+
     #herosection {
         width: 100%;
         height: 400px;
@@ -481,7 +514,8 @@ footer {
         display: none;
     }
 
-    /* about section*/
+    /* -------------- About Section -------------- */
+
     #aboutsection {
         height: 1000px;
     }
@@ -500,9 +534,10 @@ footer {
         margin-top: -20px;
     }
 
-    /* project section */
+    /* -------------- Project Section -------------- */
+
     #projectsection {
-        height: 1200px;
+        height: max-content;
     }
 
     #project-cards-list {
@@ -523,31 +558,25 @@ footer {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
 
-    /* contact section */
+    /* -------------- Contact Section -------------- */
+
     #contactsection {
-        width: 100%;
-        height: 1000px;
+        height: fit-content;
     }
 
+    /* Adjust contact form layout */
     #contact-main {
-        width: 90%;
-        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 30px;
     }
 
     #contactform {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
     }
 
     form {
-        width: 90%;
+        width: 95%;
     }
 
     textarea {
@@ -555,6 +584,9 @@ footer {
         margin-top: 6px;
     }
 
+    /* -------------- Footer -------------- */
+
+    /* Adjust size of copyright p */
     #copyright p {
         font-size: 12px;
     }
@@ -563,25 +595,30 @@ footer {
 
 /* Large devices (laptops/desktops, max 1200px) */
 @media only screen and (min-width: 1440px) {
-      /* header section */
-      #header {
+    /* -------------- Header Section -------------- */
+    
+    /* Center content for large screens */
+    #header {
         width: 1440px;
-        display: flex;
-        align-items: center;
         margin: auto;
     }
 
+    /* Center content for large screens */
     main {
         width: 1440px;
         margin: auto;
     }
 
-    /* about section*/  
+    /* -------------- About Section -------------- */
+
+    /* Keep the education section in rows on large screens */
     #eduinfo {
         flex-direction: row;
     }
 
-    /* contact section */
+    /* -------------- Contact Section -------------- */
+
+    /* Keep the contact elements in rows on large screens */
     #contact-main {
         flex-direction: row;
     }
