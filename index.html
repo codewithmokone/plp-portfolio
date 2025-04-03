@@ -12,16 +12,21 @@
     <script src="assets/js/script.js" defer></script>
     <title>Portfolio - Simon Lephoto</title>
 </head>
-<body>
-    <header id="home">
-        <span id="logo"><span>S</span>imon Lephoto</span>
+<body id="container">
+    <header id="header">
+            <!-- logo text -->
+        <div id="logo">
+            <h1 id="logo-text"><span>S</span>imon Lephoto</h1>
+        </div>
+        <!-- main navbar -->
         <nav id="navbar">
             <a class="navlink active" href="#herosection">Home</a>
             <a class="navlink" href="#aboutsection">About</a>
             <a class="navlink" href="#projectsection">Projects</a>
             <a class="navlink" href="#contactsection">Contact</a>
-            <a class="navlink" href="#contactsection">Download CV</a>
+            <a class="navlink" href="assets/Resume - Simon Lephoto.pdf">Download CV</a>
         </nav>
+        <!-- responsive menu icons -->
         <div class="ham-burger">
             <img
               class="ham-burger-icon"
@@ -34,12 +39,13 @@
               alt="close icon"
             />
           </div>
+          <!-- responsive menu -->
         <nav class="mobile-navbar hidden">
             <a class="mobileNavlink active" href="#herosection">Home</a>
             <a class="mobileNavlink" href="#aboutsection">About</a>
             <a class="mobileNavlink" href="#projectsection">Projects</a>
             <a class="mobileNavlink" href="#contactsection">Contact</a>
-            <a class="mobileNavlink" href="#contactsection">Download CV</a>
+            <a class="mobileNavlink" href="assets/Resume - Simon Lephoto.pdf">Download CV</a>
         </nav>
     </header>
     <main>
@@ -50,12 +56,12 @@
                 <h1><span>Simon Lephoto</span></h1>
                 <h2>a <span>Front-end</span> Developer</h2>
                 <div id="resume-btn-container">
-                    <button>RESUME</button>
+                    <button><a  href="assets/Resume - Simon Lephoto.pdf">RESUME</a></button>
                 </div>
                 
             </div>
             <div id="hero-image">
-                <img src="#" alt="">
+                <img src="assets/images/Code typing-rafiki.svg" alt="vector_image">
             </div>
         </section>
         <!-- about section section -->
@@ -63,6 +69,7 @@
             <div id="aboutme">
                 <div id="aboutheader">
                     <h3>ABOUT ME</h3>
+                    <hr class="hr-rule">
                     <p>Hi, I'm Simon Lephoto, a creative Frontend Developer with a
                     passion for turning ideas into dynamic and user-friendly web
                     experiences. With a strong foundation in HTML, CSS, and
@@ -80,9 +87,11 @@
             <div id="education">
                 <div>
                     <h3>EDUCATION</h3>
+                    <hr class="hr-rule">
                 </div>
                 <div id="eduinfo">
                     <div class="cards">
+                        <img class="card-icon" src="assets/icons/graduated-student-svgrepo-com.svg" alt="graduate_image">
                         <h4>Diploma in IT</h4>
                         <ul>
                             <li>A+</li>
@@ -92,13 +101,13 @@
                         </ul>
                     </div>
                     <div class="cards">
+                        <img class="card-icon" src="assets/icons/certification-file-svgrepo-com.svg" alt="certificate_image">
                         <h4>Certificate in React</h4>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>Javacript</li>
                             <li>React</li>
-                            <li>Node JS</li>
                         </ul>
                     </div>
                 </div>
@@ -108,17 +117,40 @@
         <section id="projectsection" class="section">
             <div id="projectsheader">
                 <h3>PROJECTS</h3>
+                <hr class="hr-rule">
             </div>
-            <div id="#projectslist">
-                
+            <div id="project-cards-list">
+                <div class="project-card">
+                    <img src="assets/images/stopwatch-web-site.PNG" alt="website_one_image" style="width:100%">
+                    <div class="container">
+                      <h4><b>Stop Watch</b></h4>
+                      <a href="https://fantastic-cranachan-03ec39.netlify.app/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/tictactoe.PNG" alt="website_two_image" style="width:100%">
+                    <div class="container">
+                      <h4><b>TIC-TAC-TOE GAME</b></h4>
+                      <a href="https://starlit-horse-2a9c98.netlify.app/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/weather-web-site.PNG" alt="website_three_image" style="width:100%">
+                    <div class="container">
+                      <h4><b>Weather App</b></h4>
+                      <a href="https://imaginative-donut-911ecd.netlify.app/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- contact form section -->
         <section id="contactsection" class="section">
-            <h3>CONTACT ME</h3>
+            <h3 id="contact-heading">CONTACT ME</h3>
+            <hr class="hr-rule">
             <div id="contact-main">
                 <div id="contactinfo">
                     <h3>Contact info:</h3>
+                    
                     <ul>
                         <li><img class="contact-icons" src="assets/icons/address-svgrepo-com.svg" alt=""> Address: JHB Central</li>
                         <li><img class="contact-icons" src="assets/icons/phone-flip-alt-svgrepo-com.svg" alt=""> Phone: +27 71 313 2387</li>

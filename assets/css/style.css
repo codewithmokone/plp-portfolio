@@ -3,40 +3,33 @@ body {
     margin: 0 auto;
 }
 
-/* {
- color: #FE6721; orange
- color: #E8E7E1; grey
- color: #000000; black
-} */
-
 /* header section */
-
 .ham-burger {
     display: none;
 }
 
-
-header {
+#header {
     width: 100%;
     height: 60px;
-    backdrop-filter: blur(10px);
-    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: auto;
-    transition: 0.4s;
+    background-color: #F3F2F0;
+    position: fixed;
     top: 0;
-    /* gap: 2rem; */
-    /* overflow: hidden; */
-    z-index: 1;
+    left: 0;
+    right: 0;
 }
 
 #logo {
+    width: 50%;
+}
+
+#logo-text {
     font-size: 30px;
     font-weight: bold;
-    margin-left: 80px;
+    margin-left: 10px;
 }
 
 #logo span {
@@ -44,8 +37,11 @@ header {
 }
 
 nav {
-    width: 40%;
-    margin-right: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
 }
 
 nav a{
@@ -71,7 +67,7 @@ nav a:hover{
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
     position: absolute;
     top: 60px;
 }
@@ -81,9 +77,10 @@ nav a:hover{
 }
 
 .section{
-    width: 100%;
+    width: 1440px;
     height: fit-content;
     margin: auto;
+    padding-top: 60px;
 }
 
 /* hero section */
@@ -92,6 +89,7 @@ nav a:hover{
     background-repeat: no-repeat;
     background-position-y:bottom;
     background-color: #F3F2F0;
+    width: 100%;
     height: 600px;
     display: flex;
     flex-direction: row;
@@ -99,8 +97,8 @@ nav a:hover{
     align-items: center;
 }
 
-#herosection div {
-    /* margin-top: 60px; */
+#hero-info, #hero-image{
+    margin-top: -60px;
 }
 
 h1 {
@@ -122,27 +120,31 @@ h1 {
     padding: 6px;
 }
 
+#herosection button a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 #herosection img {
-    width:300px; 
-    height:300px;
-    background-color: gray;
+    width:500px; 
+    height:500px;
+    /* background-color: gray; */
     border-radius: 50%;
 }
 
 /* about section */
 #aboutsection {
-    /* background-image: url("../images/triangle-asymmetrical-divider-inverse.svg");
-    background-repeat: no-repeat;
-    background-position-y:top; */
-    height: min-content;
+    width: 100%;
+    height: 900px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 #aboutme {
-    height: 400px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,7 +156,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 100px; */
+    margin-top: -40px;
 }
 
 #aboutme p {
@@ -190,6 +192,7 @@ h1 {
 
 #eduinfo {
     width: 100%;
+    height: 700px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -198,38 +201,87 @@ h1 {
 
 .cards {
     width: 300px;
-    height: 200px;
+    height: 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid green;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cards h4 {
+    margin-bottom: -4px;
+}
+
+.card-icon {
+    width: 30px;
+    margin-bottom: -10px;
 }
 
 .cards ul {
+    width: 260px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     list-style: none;
+    /* margin-top: -10px; */
+}
+
+.cards ul li {
+    margin: 4px;
 }
 
 /* project section */
 #projectsection {
-    height: 400px;
+    width: 100%;
+    height: 800px;
     background-image: url("../images/bubble-side-divider.svg");
     background-repeat: no-repeat;
     background-position-y:bottom;
     background-color: #F3F2F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 #projectsheader {
+    width: 100%;
+    height: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
+    align-items: center;
 }
 
-#projectslist {
+#project-cards-list {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.project-card {
+    width: 300px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container a {
+    color: #000000;
+    text-decoration: none;
 }
 
 /* contact section */
@@ -245,8 +297,8 @@ h1 {
     align-items: center;
 }
 
-#contactsection h3 {
-    margin-top: 10px;
+#contact-heading {
+    margin-top: 20px;
 }
 
 #contact-main {
@@ -301,11 +353,12 @@ input{
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    /* resize: vertical; */
 }
 
 textarea {
-    width: 100%;
+    width: 98%;
+    padding: 4px;
+    margin-top: 6px;
 }
 
 /* footer section */
@@ -324,16 +377,31 @@ footer {
     align-items: center;
 }
 
+.hr-rule {
+    width: 60px;
+    height: 4px;
+    background-color: #FE6721;
+    border: none;
+    margin-top: -10px;
+}
 
 /* If the screen size is 600px wide or less, hide the element */
 @media screen and (max-width: 786px) {
     /* header section */
-    header {
+    #header {
         width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #logo {
+        width: 50%;
+        display: flex;
     }
     
-    #logo {
+    #logo-text {
         font-size: 16px;
+        margin-top: 10px;
         margin-left: 20px;
     }
 
@@ -342,12 +410,15 @@ footer {
     }
 
     .active{
+        width: 100%;
         color: #FFFFFF;
         background-color: #FE6721;
     }
 
     .ham-burger {
+        width: 50%;
         display: flex;
+        justify-content: end;
     }
 
     .ham-burger-icon {
@@ -360,8 +431,15 @@ footer {
         margin-right: 20px;
     }
 
+    .section{
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+    }
+
     /* hero section */
     #herosection {
+        width: 100%;
         height: 400px;
 
     }
@@ -387,22 +465,68 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
     #resume-btn-container button {
         width: 60%;
         font-weight: bold;
     }
 
+    #resume-btn-container button a{
+        text-decoration: none;
+        color: #000000;
+    }
+
+
     #hero-image {
         display: none;
     }
 
-    /* contact section */
-    #contactsection {
-        height: 800px;
+    /* about section*/
+    #aboutsection {
+        height: 1000px;
     }
 
-    #contactsection h3 {
-        margin-top: 10px;
+    #education {
+        height: min-content;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #eduinfo {
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -20px;
+    }
+
+    /* project section */
+    #projectsection {
+        height: 1200px;
+    }
+
+    #project-cards-list {
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .project-card {
+        width: 300px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* contact section */
+    #contactsection {
+        width: 100%;
+        height: 1000px;
     }
 
     #contact-main {
@@ -429,6 +553,37 @@ footer {
     textarea {
         width: 96%;
         margin-top: 6px;
+    }
+
+    #copyright p {
+        font-size: 12px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, max 1200px) */
+@media only screen and (min-width: 1440px) {
+      /* header section */
+      #header {
+        width: 1440px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    main {
+        width: 1440px;
+        margin: auto;
+    }
+
+    /* about section*/  
+    #eduinfo {
+        flex-direction: row;
+    }
+
+    /* contact section */
+    #contact-main {
+        flex-direction: row;
     }
 }
 
