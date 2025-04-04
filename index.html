@@ -1,182 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- fonts external links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=school" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=code" />
     <!-- internal css and javascript links -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/script.js" defer></script>
     <title>Portfolio - Simon Lephoto</title>
-</head>
-<body id="container">
-    <header id="header" class="display row">
-            <!-- logo text -->
+  </head>
+  <body id="container">
+
+    <header>
+      <div id="header-container">
+        <!-- logo text -->
         <div id="logo">
-            <h1 id="logo-text"><span>S</span>imon Lephoto</h1>
+          <h1 id="logo-text"><span>S</span>imon Lephoto</h1>
         </div>
         <!-- main navbar -->
         <nav id="navbar" class="display row">
-            <a class="navlink active" href="#herosection">Home</a>
-            <a class="navlink" href="#aboutsection">About</a>
-            <a class="navlink" href="#projectsection">Projects</a>
-            <a class="navlink" href="#contactsection">Contact</a>
-            <a class="navlink" href="assets/Resume - Simon Lephoto.pdf">Download CV</a>
+          <a class="navlink active" href="#herosection">Home</a>
+          <a class="navlink" href="#aboutsection">About</a>
+          <a class="navlink" href="#projectsection">Projects</a>
+          <a class="navlink" href="#skills">Skills</a>
+          <a class="navlink" href="#contactsection">Contact</a>
+          <a class="navlink" href="assets/Resume - Simon Lephoto.pdf"
+            >Download CV</a
+          >
         </nav>
         <!-- responsive menu icons -->
         <div class="ham-burger">
-            <img
-              class="ham-burger-icon"
-              src="assets/images/hamburger-menu-svgrepo-com.svg"
-              alt="menu icon"
-            />
-            <img
-              class="close-icon hidden"
-              src="assets/images/close-svgrepo-com.svg"
-              alt="close icon"
-            />
-          </div>
-          <!-- responsive menu -->
+          <img
+            class="ham-burger-icon"
+            src="assets/icons/hamburger-menu-svgrepo-com.svg"
+            alt="menu_icon"
+          />
+          <img
+            class="close-icon hidden"
+            src="assets/icons/close-svgrepo-com.svg"
+            alt="close_icon"
+          />
+        </div>
+        <!-- responsive menu -->
         <nav class="mobile-navbar hidden">
-            <a class="mobileNavlink active" href="#herosection">Home</a>
-            <a class="mobileNavlink" href="#aboutsection">About</a>
-            <a class="mobileNavlink" href="#projectsection">Projects</a>
-            <a class="mobileNavlink" href="#contactsection">Contact</a>
-            <a class="mobileNavlink" href="assets/Resume - Simon Lephoto.pdf">Download CV</a>
+          <a class="mobileNavlink active" href="#herosection">Home</a>
+          <a class="mobileNavlink" href="#aboutsection">About</a>
+          <a class="mobileNavlink" href="#projectsection">Projects</a>
+          <a class="mobileNavlink" href="#skills">Skills</a>
+          <a class="mobileNavlink" href="#contactsection">Contact</a>
+          <a class="mobileNavlink" href="assets/Resume - Simon Lephoto.pdf"
+            >Download CV</a
+          >
         </nav>
+      </div>
     </header>
+
     <main>
-        <!-- hero section section -->
-        <section id="herosection" class="section display row">
+
+      <!-- hero section -->
+      <section id="herosection">
+        <div id="hero-container">
             <div id="hero-info">
                 <p>Hello, I'm</p>
-                <h1><span>Simon Lephoto</span></h1>
-                <h2>a <span>Front-end</span> Developer</h2>
+                <h1>Simon Lephoto</h1>
+                <h2>Frontend Developer</h2>
                 <div id="resume-btn-container">
-                    <button><a  href="assets/Resume - Simon Lephoto.pdf">RESUME</a></button>
+                  <button>
+                    <a href="assets/Resume - Simon Lephoto.pdf">RESUME</a>
+                  </button>
                 </div>
-                
-            </div>
-            <div id="hero-image">
-                <img src="assets/images/Code typing-rafiki.svg" alt="vector_image">
-            </div>
-        </section>
-        <!-- about section section -->
-        <section id="aboutsection" class="section display column">
+              </div>
+              <div id="hero-image">
+                <img src="assets/images/Hand coding-bro.svg" alt="vector_image" />
+              </div>
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section id="aboutsection">
+        <div id="about-container">
             <div id="aboutme" class="display column">
                 <div id="aboutheader" class="display column">
-                    <h3>ABOUT ME</h3>
-                    <hr class="hr-rule">
-                    <p>Hi, I'm Simon Lephoto, a creative Frontend Developer with a
+                  <h2>ABOUT ME</h2>
+                  <hr class="hr-rule" />
+                  <p>
+                    Hi, I'm Simon Lephoto, a creative Frontend Developer with a
                     passion for turning ideas into dynamic and user-friendly web
                     experiences. With a strong foundation in HTML, CSS, and
-                    JavaScript, I specialize in building responsive, accessible,
-                    and performant websites that prioritize user experience.</p>
+                    JavaScript, I specialize in building responsive, accessible, and
+                    performant websites that prioritize user experience.
+                  </p>
                 </div>
-                <div id="skills" class="display row">
-                    <img class="skillimage" src="assets/images/html5-01-svgrepo-com.svg" alt="">
-                    <img class="skillimage" src="assets/images/css3-02-svgrepo-com.svg" alt="">
-                    <img class="skillimage" src="assets/images/javascript-155-svgrepo-com.svg" alt="">
-                    <img class="skillimage" src="assets/images/reactjs-svgrepo-com.svg" alt="">
-                    <img class="skillimage" src="assets/images/mysql-svgrepo-com.svg" alt="">
-                </div>
+                <!-- <div id="skills" class="display row">
+                          <img class="skillimage" src="assets/images/html5-01-svgrepo-com.svg" alt="">
+                          <img class="skillimage" src="assets/images/css3-02-svgrepo-com.svg" alt="">
+                          <img class="skillimage" src="assets/images/javascript-155-svgrepo-com.svg" alt="">
+                          <img class="skillimage" src="assets/images/reactjs-svgrepo-com.svg" alt="">
+                          <img class="skillimage" src="assets/images/mysql-svgrepo-com.svg" alt="">
+                      </div> -->
             </div>
             <div id="education" class="display column">
                 <div>
-                    <h3>EDUCATION</h3>
-                    <hr class="hr-rule">
+                  <h3>EDUCATION</h3>
+                  <!-- <hr class="hr-rule" /> -->
                 </div>
-                <div id="eduinfo" class="display row">
-                    <div class="cards display column">
-                        <img class="card-icon" src="assets/icons/graduated-student-svgrepo-com.svg" alt="graduate_image">
-                        <h4>Diploma in IT</h4>
-                        <ul>
-                            <li>A+</li>
-                            <li>N+</li>
-                            <li>Project Management</li>
-                            <li>Web Development</li>
-                        </ul>
+                <div id="eduinfo">
+
+                    <div class="about-card">
+                        <div class="aboutCardHeader">
+                            <span>
+                                <img src="assets/icons/code-svgrepo-com.svg" alt="coding_icon">
+                            </span>
+                          <h3>Development</h3>
+                        </div>
+                        <div>
+                            <p>
+                                With over 1 year of experience in web development, 
+                                I've worked on a variety of projects from 
+                                websites to mobile applications.
+                            </p>
+                        </div>
                     </div>
-                    <div class="cards display column">
-                        <img class="card-icon" src="assets/icons/certification-file-svgrepo-com.svg" alt="certificate_image">
-                        <h4>Certificate in React</h4>
-                        <ul class="display column">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javacript</li>
-                            <li>React</li>
-                        </ul>
+                    <div class="about-card">
+                        <div class="aboutCardHeader">
+                            <span>
+                                <img src="assets/icons/graduated-student-svgrepo-com.svg" alt="graudate_icon">
+                            </span>
+                          <h3>Education</h3>
+                        </div>
+                        <div>
+                            <p>
+                                Diploma in Information Technology and continuous learning through 
+                                courses, workshops, and staying up-to-date with the latest technologies.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- proojects section section -->
-        <section id="projectsection" class="section display column">
+        </div>     
+      </section>
+
+       <!-- proojects section -->
+       <section id="projectsection" class="section display column">
+        
+        <div id="project-container">
+            
             <div id="projectsheader" class="display column">
-                <h3>PROJECTS</h3>
-                <hr class="hr-rule">
-            </div>
-            <div id="project-cards-list" class="display row">
-                <div class="project-card display column" >
-                    <img src="assets/images/stopwatch-web-site.PNG" alt="website_one_image" style="width:100%">
-                    <div class="container display column">
-                      <h4><b>Stop Watch</b></h4>
-                      <a href="https://fantastic-cranachan-03ec39.netlify.app/" target="_blank">Live Demo</a>
-                    </div>
-                </div>
+                <h2>PROJECTS</h2>
+                <hr class="hr-rule" />
+                <p>Here are some of my recent projects. Each one was built to solve a specific problem and showcase different skills and technologies.</p>
+              </div>
+
+            <div id="project-cards-list">
+                <!-- Card One -->
                 <div class="project-card display column">
-                    <img src="assets/images/tictactoe.PNG" alt="website_two_image" style="width:100%">
-                    <div class="container display column">
-                      <h4><b>TIC-TAC-TOE GAME</b></h4>
-                      <a href="https://starlit-horse-2a9c98.netlify.app/" target="_blank">Live Demo</a>
-                    </div>
+                  <img
+                    src="assets/images/stopwatch-web-site.PNG"
+                    alt="website_one_image"
+                    style="width: 100%"
+                  />
+                  <div class="container display column">
+                    <h4><b>Stop Watch</b></h4>
+                    <a
+                      href="https://fantastic-cranachan-03ec39.netlify.app/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
                 </div>
+
+                <!-- Card One -->
                 <div class="project-card display column">
-                    <img src="assets/images/weather-web-site.PNG" alt="website_three_image" style="width:100%">
-                    <div class="container display column">
-                      <h4><b>Weather App</b></h4>
-                      <a href="https://imaginative-donut-911ecd.netlify.app/" target="_blank">Live Demo</a>
-                    </div>
+                  <img
+                    src="assets/images/tictactoe.PNG"
+                    alt="website_two_image"
+                    style="width: 100%"
+                  />
+                  <div class="container display column">
+                    <h4><b>TIC-TAC-TOE GAME</b></h4>
+                    <a
+                      href="https://starlit-horse-2a9c98.netlify.app/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Card One -->
+                <div class="project-card display column">
+                  <img
+                    src="assets/images/weather-web-site.PNG"
+                    alt="website_three_image"
+                    style="width: 100%"
+                  />
+                  <div class="container display column">
+                    <h4><b>Weather App</b></h4>
+                    <a
+                      href="https://imaginative-donut-911ecd.netlify.app/"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                  </div>
                 </div>
             </div>
-        </section>
-        <!-- contact form section -->
-        <section id="contactsection" class="section display column">
-            <h3 id="contact-heading">CONTACT ME</h3>
-            <hr class="hr-rule">
-            <div id="contact-main" class="display">
-                <div id="contactinfo" class="display column">
-                    <h3>Contact info:</h3>
-                    <ul class="display column">
-                        <li><img class="contact-icons" src="assets/icons/address-svgrepo-com.svg" alt=""> Address: JHB Central</li>
-                        <li><img class="contact-icons" src="assets/icons/phone-flip-alt-svgrepo-com.svg" alt=""> Phone: +27 71 313 2387</li>
-                        <li><img class="contact-icons" src="assets/icons/email-1-svgrepo-com.svg" alt=""> Email: simonlephotojr@gmail.com</li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div id="contactform">
-                    <form action="#">
-                        <label for="fname">First Name</label><br>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required><br>
-                        <label for="lname">Last Name</label><br>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br>
-                        <label for="subject">Subject</label><br>
-                        <textarea id="subject" name="subject"  placeholder=" Message.." style="height:200px" required></textarea>
-                        <input id="submit-btn" type="submit" value="Submit">
-                      </form>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div id="copyright">
-            <p>&copy; Copyright 2025 - Portfolio. All rights reserved.</p>
-            <a href="https://github.com/codewithmokone"><img id="copyright-icon" src="assets/icons/github-142-svgrepo-com.svg" alt="github_icon"></a>
         </div>
+
+      </section>
+
+      <!-- Skills section -->
+      <section id="skills">
+        <div id="skills-container">
+            <div id="skills-header">
+                <h2>SKILLS</h2>
+                <hr class="hr-rule" />
+                <p>
+                  I've worked with a variety of technologies and tools throughout my
+                  career. Here are some of the key skills I bring to the table.
+                </p>
+              </div>
+              <div id="skills-info">
+                <div class="skills-card">
+                  <div class="skillsCardHeader">
+                    <span
+                      ><img
+                        src="assets/icons/internet-svgrepo-com.svg"
+                        alt="internet_icon"
+                    /></span>
+                    <h3>Frontend Development</h3>
+                  </div>
+                  <div>
+                    <ul>
+                      <li>
+                        <img
+                          class="list-image"
+                          src="assets/icons/checked-svgrepo-com.svg"
+                          alt="checked_icon"
+                        />HTML5 & CSS3
+                      </li>
+                      <li>
+                        <img
+                          class="list-image"
+                          src="assets/icons/checked-svgrepo-com.svg"
+                          alt="checked_icon"
+                        />JavaScript
+                      </li>
+                      <li>
+                        <img
+                          class="list-image"
+                          src="assets/icons/checked-svgrepo-com.svg"
+                          alt="checked_icon"
+                        />React.js
+                      </li>
+                      <li>
+                        <img
+                          class="list-image"
+                          src="assets/icons/checked-svgrepo-com.svg"
+                          alt="checked_icon"
+                        />Redux
+                      </li>
+                      <li>
+                        <img
+                          class="list-image"
+                          src="assets/icons/checked-svgrepo-com.svg"
+                          alt="checked_icon"
+                        />Tailwind CSS
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="skills-card">
+                  <div class="skillsCardHeader">
+                    <span
+                      ><img
+                        src="assets/icons/coding-svgrepo-com.svg"
+                        alt="internet_icon"
+                    /></span>
+                    <h3>Back Development</h3>
+                  </div>
+                  <div>
+                    <ul>
+                      <li>
+                        <img
+                          class="list-image"
+                          src="assets/icons/checked-svgrepo-com.svg"
+                          alt="checked_icon"
+                        />Node.js
+                      </li>
+                      <li>
+                        <img
+                          class="list-image"
+                          src="assets/icons/checked-svgrepo-com.svg"
+                          alt="checked_icon"
+                        />Express.js
+                      </li>
+                      <li>
+                        <img
+                          class="list-image"
+                          src="assets/icons/checked-svgrepo-com.svg"
+                          alt="checked_icon"
+                        />RESTful APIs
+                      </li>
+                      <li>
+                        <img
+                          class="list-image"
+                          src="assets/icons/checked-svgrepo-com.svg"
+                          alt="checked_icon"
+                        />Firebase
+                      </li>
+                      <li>
+                        <img
+                          class="list-image"
+                          src="assets/icons/checked-svgrepo-com.svg"
+                          alt="checked_icon"
+                        />Authentication
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="skills-card">
+                  <div class="skillsCardHeader">
+                    <span
+                      ><img
+                        src="assets/icons/tools-svgrepo-com.svg"
+                        alt="internet_icon"
+                    /></span>
+                    <h3>Tools & Others</h3>
+                  </div>
+                  <div>
+                    <ul>
+                      <li>
+                        <img
+                          class="list-image"
+                          src="assets/icons/checked-svgrepo-com.svg"
+                          alt="checked_icon"
+                        />Git & Github
+                      </li>
+                      <li>
+                        <img
+                          class="list-image"
+                          src="assets/icons/checked-svgrepo-com.svg"
+                          alt="checked_icon"
+                        />Figma
+                      </li>
+                      <li>
+                        <img
+                          class="list-image"
+                          src="assets/icons/checked-svgrepo-com.svg"
+                          alt="checked_icon"
+                        />VS Code
+                      </li>
+                      <li>
+                        <img
+                          class="list-image"
+                          src="assets/icons/checked-svgrepo-com.svg"
+                          alt="checked_icon"
+                        />Trello
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+
+      <!-- contact form section -->
+      <section id="contactsection" class="section">
+        <div id="contact-container">
+            <div id="contact-header">
+                <h2 id="contact-heading">CONTACT ME</h2>
+                <hr class="hr-rule" />
+                <p>Interested in working together? Feel free to contact 
+                    me for any project or collaboration opportunities.</p>
+            </div>
+            
+        <div id="contact-main" class="display">
+          <div id="contactinfo" class="display column">
+            <h2>Contact info:</h2>
+            <ul class="display column">
+              <li>
+                <img
+                  class="contact-icons"
+                  src="assets/icons/address-svgrepo-com.svg"
+                  alt=""
+                />
+                Address: JHB Central
+              </li>
+              <li>
+                <img
+                  class="contact-icons"
+                  src="assets/icons/phone-flip-alt-svgrepo-com.svg"
+                  alt=""
+                />
+                Phone: +27 71 313 2387
+              </li>
+              <li>
+                <img
+                  class="contact-icons"
+                  src="assets/icons/email-1-svgrepo-com.svg"
+                  alt=""
+                />
+                Email: simonlephotojr@gmail.com
+              </li>
+              <li></li>
+            </ul>
+          </div>
+          <div id="contactform">
+            <form action="#">
+              <label for="fname">First Name</label><br />
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+                required
+              /><br />
+              <label for="lname">Last Name</label><br />
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+                required
+              /><br />
+              <label for="subject">Subject</label><br />
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder=" Message.."
+                style="height: 200px"
+                required
+              ></textarea>
+              <input id="submit-btn" type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="copyright">
+        <p>&copy; Copyright 2025 - Portfolio. All rights reserved.</p>
+        <a href="https://github.com/codewithmokone"
+          ><img
+            id="copyright-icon"
+            src="assets/icons/github-142-svgrepo-com.svg"
+            alt="github_icon"
+        /></a>
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>
