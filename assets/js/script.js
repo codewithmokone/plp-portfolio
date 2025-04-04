@@ -77,9 +77,12 @@ window.onload = function () {
       // these IDs from the previous steps
       emailjs.sendForm("service_j4v7fi5", "template_hc9fmar", this).then(
         () => {
+          // Clears the form input fields
           document.getElementById('user_name').value = '';
           document.getElementById('user_email').value = '';
           document.getElementById('message').value = '';
+
+          // Pops up a message sent to the user
           alert("Message Sent");
         },
         (error) => {

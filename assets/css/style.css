@@ -559,25 +559,6 @@ textarea {
     margin-top: 6px;
 }
 
-.notification {
-    width: 200px;
-    height: 30px;
-    display: flex;
-    /* position: absolute; */
-    align-items: center;
-    justify-content: center;
-    background-color: whitesmoke;
-    border: 1px solid #2563eb;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-  
-.notification p {
-    color: #2563eb;
-}
-
-
-
 /* -------------- Footer -------------- */
 
 footer {
@@ -661,6 +642,7 @@ i {
         display: none;
     }
 
+    /* Active page link */
     .active{
         width: 100%;
         color: #FFFFFF;
@@ -673,11 +655,13 @@ i {
         justify-content: end;
     }
 
+    /* Shows mobile menu icon */
     .ham-burger-icon {
         width: 26px;
         margin-right: 20px;
     }
 
+    /* Shows close menu icon */
     .close-icon {
         width: 24px;
         margin-right: 20px;
@@ -701,6 +685,7 @@ i {
         flex-direction: column;
         align-self: center;
         justify-content: center;
+        margin-left: 0;
     }
 
     
