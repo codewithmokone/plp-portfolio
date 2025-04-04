@@ -59,3 +59,33 @@ mobileMenuOpen.addEventListener("click", showMobileMenu);
 // Add event listeners for closing the mobile menu
 mobileMenuClose.addEventListener("click", closeMobileMenu);
 
+
+
+// Function for sending email using email js'
+(function () {
+  // https://dashboard.emailjs.com/admin/account
+  emailjs.init({
+    publicKey: "UIEFYxSUvqD6lSTPa",
+  });
+})();
+
+window.onload = function () {
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+      // these IDs from the previous steps
+      emailjs.sendForm("service_j4v7fi5", "template_hc9fmar", this).then(
+        () => {
+          document.getElementById('user_name').value = '';
+          document.getElementById('user_email').value = '';
+          document.getElementById('message').value = '';
+          alert("Message Sent");
+        },
+        (error) => {
+          console.log("FAILED...", error);
+        }
+      );
+    });
+};
+

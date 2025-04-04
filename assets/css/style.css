@@ -522,7 +522,7 @@ nav a{
 #contactform {
     width: 50%;
     display: flex;
-    /* justify-content: center; */
+    flex-direction: column;
     align-items: center;
 }
 
@@ -535,9 +535,10 @@ form  {
 }
 
 /* Styling the submit button */
-#submit-btn {
+#submit {
     color: #FFFFFF;
     background-color: #2563eb;
+    cursor: pointer;
 }
 
 /* Input fields */
@@ -557,6 +558,25 @@ textarea {
     padding: 4px;
     margin-top: 6px;
 }
+
+.notification {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    /* position: absolute; */
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border: 1px solid #2563eb;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+  
+.notification p {
+    color: #2563eb;
+}
+
+
 
 /* -------------- Footer -------------- */
 

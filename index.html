@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=school" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=code" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!-- internal css and javascript links -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/script.js" defer></script>
@@ -413,32 +414,35 @@
             </ul>
           </div>
           <div id="contactform">
-            <form action="#">
-              <label for="fname">First Name</label><br />
+            <form id="contact-form">
+              <label for="user_name">Full Name</label><br />
               <input
                 type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Your name.."
+                class="form-input"
+                id="user_name"
+                name="user_name"
+                placeholder="Full name.."
                 required
               /><br />
-              <label for="lname">Last Name</label><br />
+              <label for="user_email">Email</label><br />
               <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Your last name.."
+                type="email"
+                class="form-input"
+                id="user_email"
+                name="user_email"
+                placeholder="Email.."
                 required
               /><br />
-              <label for="subject">Subject</label><br />
+              <label for="message">Message</label><br />
               <textarea
-                id="subject"
-                name="subject"
+                class="form-input"
+                id="message"
+                name="message"
                 placeholder=" Message.."
                 style="height: 200px"
                 required
               ></textarea>
-              <input id="submit-btn" type="submit" value="Submit" />
+              <input id="submit" class="submit" type="submit" value="Submit" />
             </form>
           </div>
         </div>
@@ -452,7 +456,7 @@
         <a href="https://github.com/codewithmokone"
           ><img
             id="copyright-icon"
-            src="assets/icons/github-142-svgrepo-com.svg"
+            src="assets/icons/github-142-svgrepo-com (1).svg"
             alt="github_icon"
         /></a>
       </div>
