@@ -13,13 +13,13 @@
     <title>Portfolio - Simon Lephoto</title>
 </head>
 <body id="container">
-    <header id="header">
+    <header id="header" class="display row">
             <!-- logo text -->
         <div id="logo">
             <h1 id="logo-text"><span>S</span>imon Lephoto</h1>
         </div>
         <!-- main navbar -->
-        <nav id="navbar">
+        <nav id="navbar" class="display row">
             <a class="navlink active" href="#herosection">Home</a>
             <a class="navlink" href="#aboutsection">About</a>
             <a class="navlink" href="#projectsection">Projects</a>
@@ -50,7 +50,7 @@
     </header>
     <main>
         <!-- hero section section -->
-        <section id="herosection" class="section">
+        <section id="herosection" class="section display row">
             <div id="hero-info">
                 <p>Hello, I'm</p>
                 <h1><span>Simon Lephoto</span></h1>
@@ -65,9 +65,9 @@
             </div>
         </section>
         <!-- about section section -->
-        <section id="aboutsection" class="section">
-            <div id="aboutme">
-                <div id="aboutheader">
+        <section id="aboutsection" class="section display column">
+            <div id="aboutme" class="display column">
+                <div id="aboutheader" class="display column">
                     <h3>ABOUT ME</h3>
                     <hr class="hr-rule">
                     <p>Hi, I'm Simon Lephoto, a creative Frontend Developer with a
@@ -76,7 +76,7 @@
                     JavaScript, I specialize in building responsive, accessible,
                     and performant websites that prioritize user experience.</p>
                 </div>
-                <div id="skills">
+                <div id="skills" class="display row">
                     <img class="skillimage" src="assets/images/html5-01-svgrepo-com.svg" alt="">
                     <img class="skillimage" src="assets/images/css3-02-svgrepo-com.svg" alt="">
                     <img class="skillimage" src="assets/images/javascript-155-svgrepo-com.svg" alt="">
@@ -84,13 +84,13 @@
                     <img class="skillimage" src="assets/images/mysql-svgrepo-com.svg" alt="">
                 </div>
             </div>
-            <div id="education">
+            <div id="education" class="display column">
                 <div>
                     <h3>EDUCATION</h3>
                     <hr class="hr-rule">
                 </div>
-                <div id="eduinfo">
-                    <div class="cards">
+                <div id="eduinfo" class="display row">
+                    <div class="cards display column">
                         <img class="card-icon" src="assets/icons/graduated-student-svgrepo-com.svg" alt="graduate_image">
                         <h4>Diploma in IT</h4>
                         <ul>
@@ -100,10 +100,10 @@
                             <li>Web Development</li>
                         </ul>
                     </div>
-                    <div class="cards">
+                    <div class="cards display column">
                         <img class="card-icon" src="assets/icons/certification-file-svgrepo-com.svg" alt="certificate_image">
                         <h4>Certificate in React</h4>
-                        <ul>
+                        <ul class="display column">
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>Javacript</li>
@@ -114,29 +114,29 @@
             </div>
         </section>
         <!-- proojects section section -->
-        <section id="projectsection" class="section">
-            <div id="projectsheader">
+        <section id="projectsection" class="section display column">
+            <div id="projectsheader" class="display column">
                 <h3>PROJECTS</h3>
                 <hr class="hr-rule">
             </div>
-            <div id="project-cards-list">
-                <div class="project-card">
+            <div id="project-cards-list" class="display row">
+                <div class="project-card display column" >
                     <img src="assets/images/stopwatch-web-site.PNG" alt="website_one_image" style="width:100%">
-                    <div class="container">
+                    <div class="container display column">
                       <h4><b>Stop Watch</b></h4>
                       <a href="https://fantastic-cranachan-03ec39.netlify.app/" target="_blank">Live Demo</a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card display column">
                     <img src="assets/images/tictactoe.PNG" alt="website_two_image" style="width:100%">
-                    <div class="container">
+                    <div class="container display column">
                       <h4><b>TIC-TAC-TOE GAME</b></h4>
                       <a href="https://starlit-horse-2a9c98.netlify.app/" target="_blank">Live Demo</a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card display column">
                     <img src="assets/images/weather-web-site.PNG" alt="website_three_image" style="width:100%">
-                    <div class="container">
+                    <div class="container display column">
                       <h4><b>Weather App</b></h4>
                       <a href="https://imaginative-donut-911ecd.netlify.app/" target="_blank">Live Demo</a>
                     </div>
@@ -144,13 +144,13 @@
             </div>
         </section>
         <!-- contact form section -->
-        <section id="contactsection" class="section">
+        <section id="contactsection" class="section display column">
             <h3 id="contact-heading">CONTACT ME</h3>
             <hr class="hr-rule">
-            <div id="contact-main">
-                <div id="contactinfo">
+            <div id="contact-main" class="display">
+                <div id="contactinfo" class="display column">
                     <h3>Contact info:</h3>
-                    <ul>
+                    <ul class="display column">
                         <li><img class="contact-icons" src="assets/icons/address-svgrepo-com.svg" alt=""> Address: JHB Central</li>
                         <li><img class="contact-icons" src="assets/icons/phone-flip-alt-svgrepo-com.svg" alt=""> Phone: +27 71 313 2387</li>
                         <li><img class="contact-icons" src="assets/icons/email-1-svgrepo-com.svg" alt=""> Email: simonlephotojr@gmail.com</li>
@@ -174,6 +174,7 @@
     <footer>
         <div id="copyright">
             <p>&copy; Copyright 2025 - Portfolio. All rights reserved.</p>
+            <a href="https://github.com/codewithmokone"><img id="copyright-icon" src="assets/icons/github-142-svgrepo-com.svg" alt="github_icon"></a>
         </div>
     </footer>
     
